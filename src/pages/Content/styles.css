@@ -1,0 +1,241 @@
+.Content {
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  background: rgb(245,245,245);
+  background: linear-gradient(225deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 64%, rgba(245,235,235,1) 100%);
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Content .page {
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgb(245,245,245);
+  box-shadow: 2px -2px 5px 0px #fff, -3px 3px 5px 0px rgb(245, 225, 225);
+  color: #333;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: 75vh;
+}
+
+.Content .page .videos {
+  width: 65%;
+  height: 65vh;
+  overflow: hidden;
+}
+
+.Content .page .videos .video {
+  width: 960px;
+  height: 540px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.Content .page .aside {
+  margin: 0;
+  margin-right: 0px;
+  padding: 0px 0px;
+  width: 14vw;
+  height: 65vh;
+}
+
+.Content .page .aside ul {
+  list-style-type: none;
+}
+
+.Content .page .aside ul h1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.Content .page .aside ul li {
+  box-shadow: 2px -2px 5px 0px #fff, -3px 3px 5px 0px rgb(245, 225, 225);
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.Content .page .aside ul li:hover {
+  box-shadow: 2px -2px 2px 0px #fff, -6px 6px 5px 0px rgb(245, 225, 225);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Content .page .aside ul li span {
+  font-size: 16px;
+  padding: 0;
+}
+
+.Content .button {
+  font-size: 30px;
+  color: #ff1b41;
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  box-shadow: 2px -2px 5px 0px #fff, -3px 3px 5px 0px rgb(245, 225, 225);
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.Content .button:hover {
+  box-shadow: 2px -2px 2px 0px #fff, -6px 6px 5px 0px rgb(245, 225, 225);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Content .foward:active {
+  transform: translateX(5%);
+}
+
+.Content .pc:active,
+.Content .button .mobile:active {
+  transform: translateX(-5%);
+}
+
+.Content .mobile {
+  display: none;
+}
+
+.Content .nav {
+  transform: translateY(90%);
+  transition: all 0.2s;
+}
+
+.Content .open {
+  transform: translateY(51%);
+}
+
+.Content .arrow {
+  transition: all 0.35s;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.Content .rotate {
+  transform: rotate(180deg);
+}
+
+.Content .inactive {
+  color: #777;
+  box-shadow: 2px -2px 2px 0px #fff, -3px 3px 5px 0px rgb(225, 225, 225);
+}
+
+.Content .inactive:active {
+  transform: translateX(0);
+}
+
+.Content .inactive:hover {
+  box-shadow: 2px -2px 2px 0px #fff, -3px 3px 5px 0px rgb(225, 225, 225);
+  background: transparent;
+  cursor: initial;
+}
+
+@media (max-width: 1440px) {
+  .Content .page {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  .Content .page .videos {
+    width: 60%;
+  }
+
+  .Content .page .aside {
+    padding: 0;
+    width: 15vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .Content .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .Content .aside {
+    display: none;
+  }
+  
+  .Content .page .videos {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 32px;
+  }
+
+  .Content .mobile {
+    display: inline;
+  }
+
+  .Content .pc {
+    display: none;
+  }
+
+  .Content .flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .Content .button {
+    line-height: 0px;
+  }
+
+  .Content .button:active {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .Content .button:hover {
+    background: transparent;
+  }
+
+  .Content .nav {
+    height: 100vh;
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 30% 30% 0% 0% / 8% 8% 0% 0%;
+    box-shadow: 2px -2px 2px 0px #fff;
+    background: rgb(245,245,245);
+    color: #ff1b41;
+    font-size: 20px;
+    position: fixed;
+    text-align: center;
+  }
+
+  .Content .nav ul li {
+    padding: 16px;
+    /* text-decoration: underline; */
+    color: #333;
+    cursor: pointer;
+    text-align: start;
+    width: 80%;
+    margin: 20px auto;
+    list-style-type: none;
+  }
+  
+  .Content .nav ul li span {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .Content .nav ul h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+}

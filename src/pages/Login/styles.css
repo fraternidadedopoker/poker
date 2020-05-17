@@ -1,0 +1,138 @@
+.Login {
+  width: 100%;
+  height: 100vh;
+  background: rgb(245,245,245);
+  background: linear-gradient(225deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 64%, rgba(245,235,235,1) 100%);
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login .dialog {
+  border-radius: 20px;
+  background-color: rgb(245,245,245);
+  box-shadow: 2px -2px 5px 0px #fff, -3px 3px 5px 0px rgb(245, 225, 225);
+  color: #333;
+  font-size: 1.7rem;
+  width: 75vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login .dialog h1 {
+  margin-bottom: 32px;
+}
+
+.Login .dialog .arrow {
+  margin-bottom: 32px;
+  color: #ff1b41;
+}
+
+.Login .dialog form {
+  box-shadow: 2px -2px 5px 0px #fff, -3px 3px 5px 0px rgb(245, 225, 225);
+  border-radius: 20px;
+  transition: all 0.4s;
+  margin-bottom: 32px;
+}
+
+.Login .dialog form:hover {
+  box-shadow: 2px -2px 2px 0px #fff, -6px 6px 5px 0px rgb(245, 225, 225);
+}
+
+.Login .dialog input {
+  color: #333;
+
+  width: 300px;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  /* border: 4px solid rgb(255, 23, 54); */
+  border: none;
+  border-right: 1px solid rgba(255, 23, 54, 0.1);
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  padding-left: 20px;
+  font-size: 1.2rem;
+  transition: background-color 0.2s;
+}
+
+.Login .dialog button {
+  color: #333;
+
+  width: 150px;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  border: none;
+  
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.Login .dialog .cta {
+  display: block;
+  width: 450px;
+  background-color: #ff1b41;
+  /* border: 4px solid rgb(245,245,245); */
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  box-shadow: 4px -4px 5px 0px #fff, -3px 3px 5px 0px rgb(245, 225, 225);
+  text-decoration: none;
+  line-height: 50px;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.Login .dialog .cta:hover {
+  box-shadow: 2px -2px 2px 0px #fff, -6px 6px 5px 0px rgb(245, 225, 225);
+}
+
+.Login .dialog button:hover,
+.Login .dialog input:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Login .dialog input:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1440px) {
+  .Login .dialog {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .Login .dialog h1 {
+    font-size: 2rem;
+  }
+
+  .Login .dialog input {
+    width: 50vw;
+  }
+
+  .Login .dialog button {
+    width:25vw;
+  }
+
+  .Login .dialog .cta {
+    width: 75vw;
+  }
+}
