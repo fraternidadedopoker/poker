@@ -33,7 +33,7 @@ function Content() {
       break;
     case 2:
       Video = <div className='videos'>
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WmAGeEfccMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title='video2' width="100%" height="100%" src="https://www.youtube.com/embed/WmAGeEfccMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
       break;
     case "renan":
