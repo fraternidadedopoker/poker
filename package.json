@@ -13,9 +13,6 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
-  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -38,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
