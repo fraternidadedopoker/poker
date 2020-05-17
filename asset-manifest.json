@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/poker/static/css/main.42ca736a.chunk.css",
+    "main.js": "/poker/static/js/main.3b61dabe.chunk.js",
+    "main.js.map": "/poker/static/js/main.3b61dabe.chunk.js.map",
+    "runtime-main.js": "/poker/static/js/runtime-main.1b373b8b.js",
+    "runtime-main.js.map": "/poker/static/js/runtime-main.1b373b8b.js.map",
+    "static/js/2.c2932098.chunk.js": "/poker/static/js/2.c2932098.chunk.js",
+    "static/js/2.c2932098.chunk.js.map": "/poker/static/js/2.c2932098.chunk.js.map",
+    "index.html": "/poker/index.html",
+    "precache-manifest.d58fdb02a6f06f28cade3b262eb648fe.js": "/poker/precache-manifest.d58fdb02a6f06f28cade3b262eb648fe.js",
+    "service-worker.js": "/poker/service-worker.js",
+    "static/css/main.42ca736a.chunk.css.map": "/poker/static/css/main.42ca736a.chunk.css.map",
+    "static/js/2.c2932098.chunk.js.LICENSE.txt": "/poker/static/js/2.c2932098.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1b373b8b.js",
+    "static/js/2.c2932098.chunk.js",
+    "static/css/main.42ca736a.chunk.css",
+    "static/js/main.3b61dabe.chunk.js"
+  ]
+}
