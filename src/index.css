@@ -37,15 +37,15 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f117; 
+  background: rgba(241, 241, 241, 0.09); 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: rgb(200, 200, 200);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #ff1b41; 
 }
