@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2914006a140e1230646e2640084e207",
+    "revision": "57ca29378ab66a797cbb80e766f21116",
     "url": "/poker/index.html"
   },
   {
-    "revision": "f36491387b860ddd4520",
+    "revision": "d7c52313ed5b7be4a0b3",
     "url": "/poker/static/css/main.ded8a182.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/poker/static/js/2.2aad6f4f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f36491387b860ddd4520",
-    "url": "/poker/static/js/main.12fd3d50.chunk.js"
+    "revision": "d7c52313ed5b7be4a0b3",
+    "url": "/poker/static/js/main.046d14a5.chunk.js"
   },
   {
     "revision": "d82b3e42e71fcee9fa43",
