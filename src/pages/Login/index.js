@@ -36,7 +36,7 @@ function Login() {
           <button type='submit'>ENTRAR</button>
         </form>
 
-        <a className='cta' href='https://wa.me/5581995976503' target='_blank'>FAÇA PARTE</a>
+        <a className='cta' href='https://wa.me/5581995272225' target='_blank'>INSCREVA-SE</a>
 
       </div>
     </div>
