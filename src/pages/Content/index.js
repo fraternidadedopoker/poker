@@ -3,6 +3,8 @@ import { FiArrowLeft, FiArrowRight, FiChevronUp, FiCalendar, FiClock } from 'rea
 import { useHistory } from 'react-router-dom';
 import './styles.css';
 
+import videos from '../../utils/videosData';
+
 function Content() {
   const [counter, setCounter] = useState(1);
   const [open, setOpen] = useState('mobile nav');
@@ -10,7 +12,7 @@ function Content() {
 
   const history = useHistory();
 
-  const videoCount = 5;
+  const videoCount = videos.length;
   
   useEffect(() => {
     const key = localStorage.getItem('authorization');
@@ -27,41 +29,7 @@ function Content() {
 
   let Video;
 
-  switch (counter) {
-    case 1:
-      Video = <div className='videos'>
-                <iframe title='video1' width="100%" height="100%" src="https://www.youtube.com/embed/wsJDIAdB_Ak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-      break;
-    case 2:
-      Video = <div className='videos'>
-                <iframe title='video2' width="100%" height="100%" src="https://www.youtube.com/embed/WmAGeEfccMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-      break;
-    case 3:
-      Video = <div className='videos'>
-                <iframe title='video3' width="100%" height="100%" src="https://www.youtube.com/embed/CVSymQudSDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-      break;
-    case 4:
-      Video = <div className='videos'>
-                <iframe title='video4' width="100%" height="100%" src="https://www.youtube.com/embed/g1-r22ID1fg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-      break;
-    case 5:
-      Video = <div className='videos'>
-                <iframe title='video5' width="100%" height="100%" src="https://www.youtube.com/embed/Ff5eG17IxZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-      break;
-    case "renan":
-      Video = <h1>RENAN BRAYNER DESENVOLVEDOR AMA BRUNNINHA</h1>
-      break
-    default:
-      Video = <div className='videos'>
-                <iframe title='default' width="100%" height="100%" src="https://www.youtube.com/embed/wsJDIAdB_Ak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; fullscreen; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-      break;
-  }
+  Video = videos[counter - 1].component;
 
   const handleOpen = () => {
     if (open == 'mobile nav') {
@@ -72,6 +40,8 @@ function Content() {
       setRotate('arrow')
     }
   }
+
+//TODO: transformar essas váriaveis nos seus próprios componentes
 
   let backMobile =  <button className='mobile button inactive'>
                       <FiArrowLeft/>
@@ -98,32 +68,21 @@ function Content() {
               </button>
   }
 
+  let list = 
+    <ul>
+      {videos.map((video, index) => (
+        <li key={index} onClick={() => setCounter(index + 1)}>
+          <h1>{video.title}</h1>
+          <span><FiCalendar/> {video.date} &nbsp; &nbsp; <FiClock/> {video.duration}</span>
+        </li>
+      ))}
+    </ul>
+
   return(
     <div className='Content'>
       <div className='page'>
         <div className='aside'>
-          <ul>
-            <li onClick={() => setCounter(1)}>
-              <h1>9 DICAS PARA JOGAR CASH GAMES</h1>
-              <span><FiCalendar/> 12/05/20 &nbsp; &nbsp; <FiClock/> 27min</span>
-            </li>
-            <li onClick={() => setCounter(2)}>
-              <h1>PENSANDO EM RANGES</h1>
-              <span><FiCalendar/> 12/05/20 &nbsp; &nbsp; <FiClock/> 27min</span>
-            </li>
-            <li onClick={() => setCounter(3)}>
-              <h1>ANÁLISE MÃOS PLO5</h1>
-              <span><FiCalendar/> 22/05/20 &nbsp; &nbsp; <FiClock/> 11min</span>
-            </li>
-            <li onClick={() => setCounter(4)}>
-              <h1>Razz - Dicas estratégicas (parte 1)</h1>
-              <span><FiCalendar/> 22/05/20 &nbsp; &nbsp; <FiClock/> 24min</span>
-            </li>
-            <li onClick={() => setCounter(5)}>
-              <h1>OMAHA HI-LO: Mãos iniciais e principais erros</h1>
-              <span><FiCalendar/> 22/05/20 &nbsp; &nbsp; <FiClock/> 19min</span>
-            </li>
-          </ul>
+          {list}
         </div>
         {backPc}
         {Video}
@@ -134,28 +93,7 @@ function Content() {
       </div>
       <div id='nav' className={open}>
         <FiChevronUp className={rotate} onClick={handleOpen}/>
-        <ul>
-          <li onClick={() => setCounter(1)}>
-            <h1>9 DICAS PARA JOGAR CASH GAMES</h1>
-            <span><FiCalendar/> 12/05/20 &nbsp; &nbsp; <FiClock/> 27min</span>
-          </li>
-          <li onClick={() => setCounter(2)}>
-            <h1>PENSANDO EM RANGES</h1>
-            <span><FiCalendar/> 12/05/20 &nbsp; &nbsp; <FiClock/> 27min</span>
-          </li>
-          <li onClick={() => setCounter(3)}>
-            <h1>ANÁLISE MÃOS PLO5</h1>
-            <span><FiCalendar/> 22/05/20 &nbsp; &nbsp; <FiClock/> 11min</span>
-          </li>
-          <li onClick={() => setCounter(4)}>
-            <h1>Razz - Dicas estratégicas (parte 1)</h1>
-            <span><FiCalendar/> 22/05/20 &nbsp; &nbsp; <FiClock/> 24min</span>
-          </li>
-          <li onClick={() => setCounter(5)}>
-            <h1>OMAHA HI-LO: Mãos iniciais e principais erros</h1>
-            <span><FiCalendar/> 22/05/20 &nbsp; &nbsp; <FiClock/> 19min</span>
-          </li>
-        </ul>
+        {list}
       </div>
     </div>
   )
