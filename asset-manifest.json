@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/poker/static/css/main.ded8a182.chunk.css",
-    "main.js": "/poker/static/js/main.1238a1da.chunk.js",
-    "main.js.map": "/poker/static/js/main.1238a1da.chunk.js.map",
+    "main.js": "/poker/static/js/main.12fd3d50.chunk.js",
+    "main.js.map": "/poker/static/js/main.12fd3d50.chunk.js.map",
     "runtime-main.js": "/poker/static/js/runtime-main.1b373b8b.js",
     "runtime-main.js.map": "/poker/static/js/runtime-main.1b373b8b.js.map",
-    "static/js/2.ce0fe668.chunk.js": "/poker/static/js/2.ce0fe668.chunk.js",
-    "static/js/2.ce0fe668.chunk.js.map": "/poker/static/js/2.ce0fe668.chunk.js.map",
+    "static/js/2.2aad6f4f.chunk.js": "/poker/static/js/2.2aad6f4f.chunk.js",
+    "static/js/2.2aad6f4f.chunk.js.map": "/poker/static/js/2.2aad6f4f.chunk.js.map",
     "index.html": "/poker/index.html",
-    "precache-manifest.5ec890e68d1084e57672a52ceaef7260.js": "/poker/precache-manifest.5ec890e68d1084e57672a52ceaef7260.js",
+    "precache-manifest.b4b3b51197eac6ff458d1dab0c94cb89.js": "/poker/precache-manifest.b4b3b51197eac6ff458d1dab0c94cb89.js",
     "service-worker.js": "/poker/service-worker.js",
     "static/css/main.ded8a182.chunk.css.map": "/poker/static/css/main.ded8a182.chunk.css.map",
-    "static/js/2.ce0fe668.chunk.js.LICENSE.txt": "/poker/static/js/2.ce0fe668.chunk.js.LICENSE.txt"
+    "static/js/2.2aad6f4f.chunk.js.LICENSE.txt": "/poker/static/js/2.2aad6f4f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1b373b8b.js",
-    "static/js/2.ce0fe668.chunk.js",
+    "static/js/2.2aad6f4f.chunk.js",
     "static/css/main.ded8a182.chunk.css",
-    "static/js/main.1238a1da.chunk.js"
+    "static/js/main.12fd3d50.chunk.js"
   ]
 }
